@@ -21,9 +21,9 @@ reducing some features, creating some new features, scaling some features , drop
 
 2. It then splits an original dataset into the train and test data, and from here going forward - works on all 3 datasets performing necessary preprocessing steps on every one - such as handling missing values, encoding categorical variables, and scaling numerical features. The common approach - all the manipuations on data is being done (transform) on every on of the 3 dataset , but only train dataset used to fit a model.  
 
-3. Hyperparameters  detection - this code is commented , please uncomment to run (it lengthy.In addition, prior to run be sure you have required cpus number or change tuning function code to adjust accordingly)
+3. Hyperparameters  detection - this code is commented , please uncomment to run (its lengthy! Thus, prior to run be sure you have required cpus number or change tuning function code to adjust accordingly)
 
-4. Model Training: The notebook uses random regression forest machine learning algorithm, to train a model on the preprocessed data. The model is trained using a train portion of the dataset and being evaluated on a test portion of it. 
+4. Model Training: The notebook uses random forest regression machine learning algorithm, to train a model on the preprocessed data. The model is trained using a train portion of the dataset and being evaluated on a test portion of it. 
 
 5. Model Evaluation: The notebook evaluates the trained model's performance using various metrics such as mean squared error (MSE), root mean squared error (RMSE), and R-squared.
 
