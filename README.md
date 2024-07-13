@@ -19,7 +19,7 @@ The `HeavyMachineryAuction.ipynb` notebook implements the following logic:
 1. Data Preprocessing: The notebook starts by loading all datasets,  
 reducing some features, creating some new features, scaling some features , dropping duplications (not on verification dataset).
 
-2. It then splits an original dataset into the train and test data, and from here going forward - works on all 3 datasets performing necessary preprocessing steps on every one - such as handling missing values, encoding categorical variables, and scaling numerical features. The common approach - all the manipuations on data is being done (transform) on every on of the 3 dataset , but only train dataset used to fit a model.  
+2. It then splits an original dataset into the train and test data, and from here going forward - works on all 3 datasets performing necessary preprocessing steps on every one - such as handling missing values, encoding categorical variables, and scaling numerical features. The common approach - all the manipuations on data is being done (transform) on each of the 3 above datasets , but only train dataset used to fit a model.  
 
 3. Hyperparameters  detection - this code is commented , please uncomment to run (its lengthy! Thus, prior to run be sure you have required cpus number or change tuning function code to adjust accordingly)
 
@@ -41,10 +41,13 @@ reducing some features, creating some new features, scaling some features , drop
     - Label encoding
 
     Feature engineering:
-    - Manipulation on salesdate
+    - Manipulations on salesdate derivates (datetime)
     - Introduction of Age feature
+    - Handling outliers in YearMade
+    - Overall Features Reduction
 
-    Hyperparametrization with sklearn GridSearch
+    Hyperparameter Optimization: 
+    - Finding the best set of hyperparameters for a model with sklearn GridSearchCV
 
 ## Conclusion
 The `HeavyMachineryAuction.ipynb` notebook provides a basic ML model for estimating the auction sale prices of heavy machinery. By following the logic described above, you can understand and replicate the steps taken in the notebook to develop your own price estimation model.
