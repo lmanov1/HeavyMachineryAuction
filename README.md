@@ -49,6 +49,24 @@ reducing some features, creating some new features, scaling some features , drop
     Hyperparameter Optimization: 
     - Finding the best set of hyperparameters for a model with sklearn GridSearchCV
 
+    Takeaway:
+    - Choose rigth features; use correlation matrixes and heatmaps to decide. 
+    I feel like there are still redundant columns in the model
+    - Introduce powerfull features and clean features that not contributing 
+    - Split datasets early to prevent data mixing on transform (overfitting)
+    - Decide how to clean and enchance data
+    - After separating , fit on train ,then transform on everything. Prevents data mixing and overfitting
+    - See how it reflected in feature importances of a regressor  - if it close?
+    - Model validity
+    - Use whatever helps - hyperparameters tuning , so on
+    - Learn visualtization methods
+    - Learn about target encoding
+    - Analyze significant columns - split to particular values and check for corelations to other signifcant things
+
+    Competition winner's tips:
+    - Use target encoding on columns - maybe classical label encoding technic is not good enougth as it does not reflect possible relations between the values (product size: huge,largee,small - may affect the price) on columns where a lot of nans (post possibly the column is not relavant for the target, or if a few nans - maybe missing data)
+    - Random forest can't interpolate or predict inflation (sales in valid are from 2012, in train - from 2011). so target may have a factor (percent of inflation) f.e. valid_price = train_price_prediction * 1.035 
+
 ## Conclusion
 The `HeavyMachineryAuction.ipynb` notebook provides a basic ML model for estimating the auction sale prices of heavy machinery. By following the logic described above, you can understand and replicate the steps taken in the notebook to develop your own price estimation model.
 
